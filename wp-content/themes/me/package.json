@@ -9,11 +9,15 @@
   "author": "Johan Wendin",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
     "bower": "^1.7.9",
     "grunt": "^1.0.1",
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^1.2.1"
+    "grunt-sass": "^1.2.1",
+    "jquery": "^3.1.0",
+    "swiper": "^3.3.1"
   }
 }

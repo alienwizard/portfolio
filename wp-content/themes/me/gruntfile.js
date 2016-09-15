@@ -31,9 +31,15 @@ module.exports = function(grunt) {
 
 				},
 
-				files: {
-					'css/style.css' : 'src/scss/application.scss'
-				}
+				files : [
+					{
+						src : ['**/*.scss', '!**/_*.scss'],
+						cwd : 'scss',
+						dest : 'css',
+						ext : '.css',
+						expand : true
+					}
+				],
 
 			},
 			build: {
@@ -72,7 +78,7 @@ module.exports = function(grunt) {
 				tasks: ['uglify:dev']
 			},
 			css: {
-				files: ['src/scss/**/*.scss'],
+				files: ['scss/**/*.scss'],
 				tasks: ['sass:dev']
 			}
 		},
