@@ -2,6 +2,20 @@
 <article>
 	
 <div class="cont-wrap">
+
+<h1 class="title">Arbete</h1>
+<section class="project-section">
+	<div class="project"></div>
+	<div class="project"></div>
+	<div class="project"></div>
+	<div class="project"></div>
+	<div class="project"></div>
+	<div class="project"></div>
+	<div class="project"></div>
+	<div class="project"></div>
+	<div class="project"></div>
+</section>
+
 	<div class="cont-row">
 					<?php
 					if ( have_posts() ) {

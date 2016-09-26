@@ -1,12 +1,22 @@
 $textColor: black;
 $headerHeight: 90px;
 
-
+body,html{
+	height:100%;
+}
 body{
 
 color: $textcolor;
+	min-height:100vh
+  background-color: pink;
+  border:50px solid white;
 
 header{
+
+	ul{
+		list-style: none;
+		display: flex;
+	}
 
 }
 

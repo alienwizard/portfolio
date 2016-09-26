@@ -44,7 +44,7 @@ function theme_enqueue_scripts(){
 
 	wp_enqueue_style('animate.min.css', get_bloginfo('template_url') . '/js/vendor/animate.css/animate.min.css');
 
-	wp_enqueue_style('custom.css', get_bloginfo('template_url') . '/css/custom.css');
+	wp_enqueue_style('style.css', get_bloginfo('template_url') . '/css/style.css');
 
 	wp_enqueue_style('responsive.css', get_bloginfo('template_url') . '/css/responsive.css');
 
@@ -164,5 +164,13 @@ function create_worker_taxonomies() {
 register_taxonomy( 'uppdrag', 'worker', $args );
 
 }
+
+function wpdocs_excerpt_more( $more ) {
+    return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+        get_permalink( get_the_ID() ),
+        __( 'Läs mer', 'textdomain' )
+    );
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
 ?>
