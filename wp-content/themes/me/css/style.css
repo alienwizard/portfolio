@@ -9,6 +9,14 @@ body {
   margin: 0px;
 }
 
+body header {
+  width: 100%;
+  background: white;
+  transition: all 1s ease;
+  top: 0px;
+  z-index: 99;
+}
+
 body header nav {
   max-width: 1200px;
   margin: auto;
@@ -16,11 +24,13 @@ body header nav {
 
 body header nav ul {
   list-style: none;
+  padding: 0px;
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 0px;
 }
 
 body header nav ul li {
@@ -35,6 +45,8 @@ body header nav ul li a {
   text-transform: uppercase;
   display: inline-block;
   font-weight: bold;
+  opacity: 0;
+  transition: 1s ease all;
 }
 
 body header nav ul li img {
@@ -43,12 +55,79 @@ body header nav ul li img {
   margin: auto;
 }
 
+body header nav ul li h3 {
+  font-size: 50px;
+  margin: 5px 0px;
+  transition: 1s ease all;
+}
+
+body .left-info {
+  float: left;
+  width: 70%;
+}
+
+body .right-info {
+  float: right;
+  width: 30%;
+}
+
 body article {
   min-height: 100vh;
   background-color: #f5deb3;
   border: 30px white solid;
   border-top: none;
   padding: 10vh 0vh;
+}
+
+body article .fullH {
+  height: 100vh;
+}
+
+body article .fullH .project-scroll {
+  transition: 1s ease all;
+  opacity: 0;
+  height: 426px;
+  width: 850px;
+  background-size: contain;
+}
+
+body article .fullH .project-scroll h1 {
+  position: absolute;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #ec9a00;
+  text-shadow: 1px 1px #ca8300;
+  margin: 0px;
+}
+
+body article #me {
+  width: 420px;
+  height: 450px;
+  position: relative;
+}
+
+body article #me h1 {
+  position: absolute;
+  right: -600px;
+  left: 339px;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px #ca8300;
+  margin: 0px;
+}
+
+body article #me p {
+  position: absolute;
+  right: -600px;
+  top: 180px;
+  left: 339px;
+  font-size: 45px;
+  /* text-transform: uppercase; */
+  color: white;
+  text-shadow: 1px 1px #ca8300;
+  margin: 0px;
+  transition: 1s ease all;
 }
 
 body article .container {

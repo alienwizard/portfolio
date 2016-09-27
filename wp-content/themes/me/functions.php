@@ -12,12 +12,15 @@ function theme_enqueue_scripts(){
 
 
 
-	wp_register_script('jquery', get_bloginfo('template_url') . '/node_modules/jquery/dist/jquery.min.js', false, true);
+	wp_register_script('jquery', get_bloginfo('template_url') . '/node_modules/jquery/dist/jquery.min.js');
 	wp_enqueue_script('jquery');
 
+/*
 	wp_register_script('parallax.js', get_bloginfo('template_url') . '/node_modules//node_modules/parallax.js/parallax.min.js');
 	wp_enqueue_script('parallax.js');
+*/
 
+	/*
 
 	wp_register_script('instafeed.js', get_bloginfo('template_url') . '/node_modules/instafeed.js/instafeed.min.js');
 	wp_enqueue_script('instafeed.js');
@@ -29,20 +32,24 @@ function theme_enqueue_scripts(){
 
 	wp_register_script('masonry', get_bloginfo('template_url') . '/node_modules/masonry/masonry.js');
 	wp_enqueue_script('masonry');
+*/
 
 	wp_register_script('imagesloaded', get_bloginfo('template_url') . '/node_modules/imagesloaded/imagesloaded.js');
 	wp_enqueue_script('imagesloaded');
 
+	wp_register_script('script', get_bloginfo('template_url') . '/js/script.min.js');
+	wp_enqueue_script('script');
+
 	wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
 	wp_enqueue_script('livereload');
 
-	wp_enqueue_style('swiper.min.css', get_bloginfo('template_url') . '/js/vendor/Swiper/dist/css/swiper.min.css');
+	//wp_enqueue_style('swiper.min.css', get_bloginfo('template_url') . '/js/vendor/Swiper/dist/css/swiper.min.css');
 
-	wp_enqueue_style('bootstrap.min.css', get_bloginfo('template_url') . '/js/vendor/bootstrap/dist/css/bootstrap.min.css');
+	//wp_enqueue_style('bootstrap.min.css', get_bloginfo('template_url') . '/js/vendor/bootstrap/dist/css/bootstrap.min.css');
 
-	wp_enqueue_style('font-awesome.min.css', get_bloginfo('template_url') . '/js/vendor/font-awesome/css/font-awesome.min.css');
+	wp_enqueue_style('font-awesome.min.css', get_bloginfo('template_url') . '/node_modules/font-awesome/css/font-awesome.min.css');
 
-	wp_enqueue_style('animate.min.css', get_bloginfo('template_url') . '/js/vendor/animate.css/animate.min.css');
+	wp_enqueue_style('animate.min.css', get_bloginfo('template_url') . '/node_modules/animate.css/animate.min.css');
 
 	wp_enqueue_style('style.css', get_bloginfo('template_url') . '/css/style.css');
 

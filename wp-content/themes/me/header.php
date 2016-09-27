@@ -13,7 +13,7 @@
 			<a href="<?php bloginfo('url'); ?>">Hem</a>
 		</li>
 		<li><a href="<?php bloginfo('url'); ?>/referensprojekt">Projekt</a></li>
-		<li class="logo"><img src="http://localhost:8080/johanwendin/wp-content/uploads/2016/09/Johan-e1474488327764.jpg"></li>
+		<li class="logo"><h3>JW</h3></li>
 		<li><a href="<?php bloginfo('url'); ?>/cv">CV</a></li>
 		<li><a href="<?php bloginfo('url'); ?>">Kontakta mig</a></li>
 	</ul>
