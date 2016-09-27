@@ -26,15 +26,24 @@ console.log(window);
 
 $(window).scroll(function(){
 
-	//Get window scroll position
+	console.log($('.prog-container')[0].offsetTop);
+	console.log(window);
+
 	var scrollYpos = window.scrollY;
+
+	$('.prog-container').css({
+			//top: scrollYpos,
+	});
+
+	//Get window scroll position
+	
 
 	$(header).css({
 		//'margin-top':scrollYpos,
 	});
 
 
-	console.log(window.scrollY);
+	//console.log(window.scrollY);
 
 	//console.log(me[0].offsetTop/2)
 
@@ -108,7 +117,7 @@ $(window).scroll(function(){
 
 	if(window.scrollY > $('#me')[0].offsetTop + $('#me')[0].clientHeight){
 
-		console.log('animate');
+		//console.log('animate');
 
 		$('#two .project-scroll').css({
 			opacity: 1,
@@ -120,7 +129,7 @@ $(window).scroll(function(){
 
 		$('#two .project-scroll').addClass('slideInUp');
 
-		console.log($('#two .project-scroll'));
+		//console.log($('#two .project-scroll'));
 
 		$('#two .project-scroll .text').addClass('rotateInUpRight');
 
@@ -142,15 +151,15 @@ $(window).scroll(function(){
 
 	//check if scrolled to section 3 adn animate it in
 
-	console.log(window.scrollY + window.innerHeight);
-	console.log($('#two')[0].offsetTop + $('#two')[0].clientHeight);
+	//console.log(window.scrollY + window.innerHeight);
+	//console.log($('#two')[0].offsetTop + $('#two')[0].clientHeight);
 
 
 		if(window.scrollY + window.innerHeight > $('#two')[0].offsetTop + $('#two')[0].clientHeight){
 
-			console.log('bigger');
+			//console.log('bigger');
 
-		console.log('animate');
+		//console.log('animate');
 
 		$('#three .project-scroll').css({
 			opacity: 1,
@@ -162,7 +171,7 @@ $(window).scroll(function(){
 
 		$('#three .project-scroll').addClass('bounceInUp');
 
-		console.log($('#three .project-scroll'));
+		//console.log($('#three .project-scroll'));
 
 		$('#three .project-scroll .text').addClass('bounceInUp');
 

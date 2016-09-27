@@ -1,13 +1,15 @@
 <?php get_header(); ?>
 <article>
+<div class="prog-container">
 <nav id="page-prog">
-	<ul>
-		<li id="sec-1"></li>
-		<li id="sec-2"></li>
-		<li id="sec-3"></li>
-		<li id="sec-4"></li>
-	</ul>
+		<li id="sec-1"><span>Introduktion</span></li>
+		<li id="sec-2"><span>TMSAB</span></li>
+		<li id="sec-3"><span>UFS</span></li>
+		<li id="sec-4"><span>Kontakta mig</span></li>
 </nav>
+<span class="bar active"></span>
+<span class="bar unactive"></span>
+</div>
 	
 <div class="cont-wrap">
 
@@ -64,12 +66,17 @@
 	<h1>Kontakta gärna mig om allt möjligt</h1>
 	<p>Fyll i formuläret för så återkommer jag så fort jag kan. Det går även bra att följa mig på Twitter eller linkedin och höra av sig där!</p>
 
+	<div class="social-row">
+		<i class="fa fa-linkedin" aria-hidden="true"></i>
+		<i class="fa fa-twitter" aria-hidden="true"></i>
+	</div>
+
 </section>
 <section id="kontakt">
 <form>
-	<input type="text" name="">
-	<input type="text" name="">
-	<input type="text" name="">
+	<input type="text" name="" placeholder="Namn">
+	<input type="text" name="" placeholder="Telefon">
+	<input type="text" name="" placeholder="E-post">
 	<textarea></textarea>
 	<input type="submit" name="">
 </form>
