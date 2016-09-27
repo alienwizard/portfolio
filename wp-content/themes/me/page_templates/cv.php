@@ -7,9 +7,10 @@
 	
 <div class="cont-wrap">
 
-<h1 class="title">Johan Wendin</h1>
+
 
 <div class="leftInfo">
+<h1 class="title">Johan Wendin</h1>
 <div class="top-section">
 <div class="me">
 
@@ -20,7 +21,7 @@
 	<h2>Past Experiences</h2>
 		<ul>
 				<li>
-						<h3>Mediahelp 2014 - ( current employment)</h3>
+						<h3>Mediahelp 2014 - (current employment)</h3>
 						<p>Web developer, mainly working with wordpress and php. Also in charge of website design and project management, and Google analytics</p>
 				</li>
 				<li>
@@ -28,7 +29,7 @@
 						<p>volunteer work at the festival</p>
 				</li>
 				<li>
-						Coop forum
+						<h3>Coop forum 2007</h3>
 				</li>
 			</ul>	
 </div>
@@ -68,23 +69,32 @@
 				<h3>Programming languages</h3>
 				<p>PHP</p>
 				<p>Javascript</p>
+				<p>Java</p>
+				<p>C++</p>
 
 		</li>
 		<li>
 				<h3>Other</h3>
 				<p>HMTL markup language</p>
 				<p>CSS</p>
+				<p>SASS</p>
 				<p>SQL</p>
 				<p>Node.js</p>
+				<p>Angular.js</p>
 				<a href="https://github.com/alienwizard">Git</a>
+				<p>Grunt</p>
 		</li>
 
 	</ul>
 </div>
 </div>
 <div class="right-contact">
+<img src="<?php bloginfo('template_url');?>/img/johan2.jpg">
 	<?php the_field('kontaktuppgifter'); ?>
+	<a class="print" href="#" onclick="window.print();"><i class="fa fa-print" aria-hidden="true"></i><p>Skriv ut CV</p><div class="clearfix"></div></a>
 </div>
+
+<div class="clearfix"></div>
 
 	<div class="cont-row">
 					<?php

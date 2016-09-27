@@ -19,7 +19,7 @@
 		<li><a href="<?php bloginfo('url'); ?>/referensprojekt">Projekt</a></li>
 		<li class="logo"><h3>JW</h3></li>
 		<li><a href="<?php bloginfo('url'); ?>/cv">CV</a></li>
-		<li><a href="<?php bloginfo('url'); ?>">Kontakta mig</a></li>
+		<li><a href="<?php bloginfo('url'); ?>/kontakta-mig">Kontakta mig</a></li>
 	</ul>
 		
 	</nav>

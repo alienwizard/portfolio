@@ -1,4 +1,6 @@
-<footer></footer>
+<footer>
+	<a href="mailto:johanwendin@gmail.com">johanwendin@gmail.com</a>
+</footer>
 <?php wp_footer(); ?>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
