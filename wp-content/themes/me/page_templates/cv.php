@@ -19,7 +19,10 @@
 <div id="past-experiences">
 	<h2>Past Experiences</h2>
 		<ul>
-				<li><h3>Mediahelp 2014 - ( current employment)</h3></li>
+				<li>
+						<h3>Mediahelp 2014 - ( current employment)</h3>
+						<p>Web developer, mainly working with wordpress and php. Also in charge of website design and project management, and Google analytics</p>
+				</li>
 				<li>
 						<h3>Roskilde Festival 2014</h3>
 						<p>volunteer work at the festival</p>
@@ -48,7 +51,34 @@
 <div id="skills">
 	<h2>Skills</h2>
 	<ul>
-		<li><h3>Swedish</h3></li>
+		<li>
+				<h3>Swedish</h3>
+		</li>
+		<li>
+				<h3>English</h3>
+		</li>
+		<li>
+				<h3>Google Analytics</h3>
+				<a href="https://www.google.com/partners/#p_certification_html;cert=3">Google Analytics certified</a>
+		</li>
+		<li><h3>Photoshop</h3></li>
+		<li><h3>ADobe Premier</h3></li>
+		<li><h3>ADobe Premier</h3></li>
+		<li>
+				<h3>Programming languages</h3>
+				<p>PHP</p>
+				<p>Javascript</p>
+
+		</li>
+		<li>
+				<h3>Other</h3>
+				<p>HMTL markup language</p>
+				<p>CSS</p>
+				<p>SQL</p>
+				<p>Node.js</p>
+				<a href="https://github.com/alienwizard">Git</a>
+		</li>
+
 	</ul>
 </div>
 </div>

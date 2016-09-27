@@ -13,14 +13,15 @@ var scrollYStart = window.scrollY;
 
 var me = $('#me');
 
-console.log(me);
+var prog = $('#page-prog ul')
+
 
 
 //Keep track of page position on navbar pitchfork thing
 
 
 //scroll function to make text on image move on scroll. Also show meny on scroll and hide when at the top
-console.log(window.scrollY);
+console.log(window);
 
 
 $(window).scroll(function(){
@@ -35,7 +36,7 @@ $(window).scroll(function(){
 
 	console.log(window.scrollY);
 
-	console.log(me[0].offsetTop/2)
+	//console.log(me[0].offsetTop/2)
 
 	//Check if scroll is past the header
 	if (window.scrollY > 0) {
@@ -95,38 +96,88 @@ $(window).scroll(function(){
 			})
 
 
+	}else{
+
+					$('#me p').css({
+					opacity: 1,
+			})
+
 	}
 
-	//check if scrolled to section 2
+	//check if scrolled to section 2 adn animate it in
 
 	if(window.scrollY > $('#me')[0].offsetTop + $('#me')[0].clientHeight){
 
 		console.log('animate');
 
-		$('#2 .project-scroll').css({
+		$('#two .project-scroll').css({
 			opacity: 1,
 		})
 
-		$('#2 .project-scroll').addClass('slideInUp');
+		$('#two .project-scroll .text').css({
+			left: $('#two .project-scroll')[0].clientWidth - 100 + 'px',
+		})
 
-		$('#2 .project-scroll h1').addClass('rotateInUpRight');
+		$('#two .project-scroll').addClass('slideInUp');
+
+		console.log($('#two .project-scroll'));
+
+		$('#two .project-scroll .text').addClass('rotateInUpRight');
+
 
 	}else{
 
-		$('#2 .project-scroll').css({
+		$('#two .project-scroll').css({
 			opacity: 0,
 		})
 
-		$('#2 .project-scroll').removeClass('slideInUp');
+		$('#two .project-scroll').removeClass('slideInUp');
 
-		$('#2 .project-scroll h1').removeClass('rotateInUpRight');
+		$('#two .project-scroll .text').removeClass('rotateInUpRight');
 
 	}
 
-	console.log($('#me')[0].offsetTop + $('#me')[0].clientHeight);
+	
 
 
+	//check if scrolled to section 3 adn animate it in
 
+	console.log(window.scrollY + window.innerHeight);
+	console.log($('#two')[0].offsetTop + $('#two')[0].clientHeight);
+
+
+		if(window.scrollY + window.innerHeight > $('#two')[0].offsetTop + $('#two')[0].clientHeight){
+
+			console.log('bigger');
+
+		console.log('animate');
+
+		$('#three .project-scroll').css({
+			opacity: 1,
+		})
+
+		$('#three .project-scroll .text').css({
+			left: $('#three .project-scroll')[0].clientWidth - 100 + 'px',
+		})
+
+		$('#three .project-scroll').addClass('bounceInUp');
+
+		console.log($('#three .project-scroll'));
+
+		$('#three .project-scroll .text').addClass('bounceInUp');
+
+
+	}else{
+
+		$('#three .project-scroll').css({
+			opacity: 0,
+		})
+
+		$('#three .project-scroll').removeClass('bounceInUp');
+
+		$('#three .project-scroll.text').removeClass('bounceInUp');
+
+	}
 
 
 

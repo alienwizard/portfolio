@@ -70,6 +70,21 @@ header{
 
 }
 
+/*PROGRESSION STYLES*/
+
+#page-prog{
+
+        position: absolute;
+    height: 100%;
+    pointer-events: all;
+    left: 3.5%;
+
+    li{
+        height: 10%;
+    }
+
+}
+
 .left-info{
 	float:left;
 	width:70%;
@@ -79,6 +94,8 @@ header{
 	float:right;
 	width:30%;
 }
+
+
 
 article{
 
@@ -90,16 +107,42 @@ article{
 
     .fullH{
         height: 100vh;
+            display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
 
         .project-scroll{
+
             transition: 1s ease all;
             opacity: 0;
     height: 426px;
     width: 850px;
     background-size: contain;
 
+    .text{
+        right: -350px;
+        position: absolute;
+        color: #ec9a00;
+    text-shadow: 1px 1px #ca8300;
+    margin: 0px;
+
+    a {
+    background-color: #ec9a01;
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+@media(max-width:1250px){
+    left: 0px;
+}
+
+    }
+
             h1{
-    position: absolute;
     font-size: 60px;
     text-transform: uppercase;
     color: #ec9a00;
@@ -107,6 +150,16 @@ article{
     margin: 0px;
 
 }
+        }
+    }
+
+
+
+    #3{
+        .project-scroll{
+            float: right;
+
+
         }
     }
 
@@ -204,6 +257,52 @@ position: absolute;
     }
 }
 
+
+}
+
+
+
+}
+
+section#one{
+        justify-content: flex-start;
+
+        #me{
+            align-self:baseline;
+        }
+    }
+
+.bot-section{
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+
+section#about {
+
+    flex-basis: 50%;
+
+    h1{
+        font-size: 40px;
+        padding-bottom:5px;
+        font-weight: bold;
+
+    }
+
+}
+
+section#kontakt{
+
+    flex-basis: 50%;
+
+    input[type="text"]{
+        display: block;
+        width: 90%;
+    }
 
 }
 

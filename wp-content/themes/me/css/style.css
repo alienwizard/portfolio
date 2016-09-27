@@ -7,6 +7,7 @@ body {
   color: black;
   min-height: 100vh;
   margin: 0px;
+  /*PROGRESSION STYLES*/
 }
 
 body header {
@@ -61,6 +62,17 @@ body header nav ul li h3 {
   transition: 1s ease all;
 }
 
+body #page-prog {
+  position: absolute;
+  height: 100%;
+  pointer-events: all;
+  left: 3.5%;
+}
+
+body #page-prog li {
+  height: 10%;
+}
+
 body .left-info {
   float: left;
   width: 70%;
@@ -81,6 +93,11 @@ body article {
 
 body article .fullH {
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 body article .fullH .project-scroll {
@@ -91,13 +108,38 @@ body article .fullH .project-scroll {
   background-size: contain;
 }
 
-body article .fullH .project-scroll h1 {
+body article .fullH .project-scroll .text {
+  right: -350px;
   position: absolute;
+  color: #ec9a00;
+  text-shadow: 1px 1px #ca8300;
+  margin: 0px;
+}
+
+body article .fullH .project-scroll .text a {
+  background-color: #ec9a01;
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+@media (max-width: 1250px) {
+  body article .fullH .project-scroll .text {
+    left: 0px;
+  }
+}
+
+body article .fullH .project-scroll h1 {
   font-size: 60px;
   text-transform: uppercase;
   color: #ec9a00;
   text-shadow: 1px 1px #ca8300;
   margin: 0px;
+}
+
+body article #3 .project-scroll {
+  float: right;
 }
 
 body article #me {
@@ -181,4 +223,40 @@ body article .project-section .project {
   background-color: white;
   height: 200px;
   width: 25%;
+}
+
+section#one {
+  justify-content: flex-start;
+}
+
+section#one #me {
+  align-self: baseline;
+}
+
+.bot-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bot-section section#about {
+  flex-basis: 50%;
+}
+
+.bot-section section#about h1 {
+  font-size: 40px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.bot-section section#kontakt {
+  flex-basis: 50%;
+}
+
+.bot-section section#kontakt input[type="text"] {
+  display: block;
+  width: 90%;
 }
