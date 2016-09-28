@@ -19,7 +19,7 @@ var prog = $('#page-prog ul')
 
 $(logoStartPos).click(function(){
 
-console.log($(this).parent().parent());
+//console.log($(this).parent().parent());
 
 
 $('a',$(this).parent().parent()).css({
@@ -40,8 +40,6 @@ console.log(window);
 
 $(window).scroll(function(){
 
-	//console.log($('.prog-container')[0].offsetTop);
-	console.log(window);
 
 	var scrollYpos = window.scrollY;
 
@@ -57,9 +55,6 @@ $(window).scroll(function(){
 	});
 
 
-	//console.log(window.scrollY);
-
-	//console.log(me[0].offsetTop/2)
 
 	//Check if scroll is past the header
 	if (window.scrollY > 0) {
@@ -134,13 +129,66 @@ $(window).scroll(function(){
 
 	//check if scrolled to section 2 adn animate it in
 
-	if(window.scrollY > $('#me')[0].offsetTop + $('#me')[0].clientHeight){
+	function isScrolledIntoView(elem){
 
-		//console.log('animate');
+		var page = window.scrollY + window.innerHeight;
 
-		$('#two .project-scroll').css({
+		for (var i = $(elem).length - 1; i >= 0; i--) {
+
+			var elementTop = $(elem)[i].getBoundingClientRect().top;
+			//console.log($(elem)[i]);
+			console.log($(elem)[i].getBoundingClientRect().top);
+
+			if (elementTop <= window.innerHeight) {
+
+
+				var eInView = $(elem)[i]
+
+
+				$(eInView).css({
+					opacity: 1,
+				});
+
+				$(eInView).addClass('slideInUp');
+
+
+				
+			}else{
+
+				var eInView = $(elem)[i]
+
+
+				$(eInView).css({
+					opacity: 0,
+				});
+
+				$(eInView).removeClass('slideInUp');
+
+
+
+			}
+		}
+
+	}
+
+	var isInView = isScrolledIntoView('#two .project-scroll');
+
+	//console.log(isInView);
+
+	if(window.scrollY + window.innerHeight  >= $('#two')[0].offsetTop + 50){
+
+		//console.log($('#two .project-scroll')[0].offsetTop);
+
+		console.log(this);
+
+	
+
+		$('#two h1').css({
 			opacity: 1,
 		})
+
+		$('#two h1').addClass('slideInUp');
+
 
 		/*
 
@@ -152,8 +200,6 @@ $(window).scroll(function(){
 
 		*/
 
-		$('#two .project-scroll').addClass('slideInUp');
-
 		//console.log($('#two .project-scroll'));
 
 		
@@ -161,11 +207,11 @@ $(window).scroll(function(){
 
 	}else{
 
-		$('#two .project-scroll').css({
+				$('#two h1').css({
 			opacity: 0,
 		})
 
-		$('#two .project-scroll').removeClass('slideInUp');
+		$('#two h1').removeClass('slideInUp');
 		/*
 		$('#two .project-scroll .text').removeClass('rotateInUpRight');
 		*/

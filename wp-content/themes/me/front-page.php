@@ -25,11 +25,12 @@
 </section>
 
 <section  class="fullH" id="two">
+<h1 class="animated">Utvalda projekt</h1>
 <div class="project-scroll animated">
 <div class="bak-img" style="background-image:url('<?php bloginfo('template_url'); ?>/img/screenshot_tmsab.png');"></div>
 <div class="overlay"></div>
 <div class="text animated">
-	<h1 class="">Traktor och Maskin i Sörmland AB</h1>
+	<h2 class="">Traktor och Maskin i Sörmland AB</h2>
 	<h3>Hemsideutveckling och projektledning</h3>
 	<p>Projekt om jag drev från början till slut. Jag skötte all kundkontatk samt all utveckling</p>
 	<a href="http://tmsab.se/">Gå till Hemsida</a>
@@ -38,7 +39,7 @@
 <div class="project-scroll animated" style="background-image:url('<?php bloginfo('template_url'); ?>/img/screenshot_ufs.png');">
 <div class="overlay"></div>
 <div class="text animated">
-	<h1>UFS i Uppsala</h1>
+	<h2>UFS i Uppsala</h2>
 	<p>Även här skötte jag hela projektet från start till mål, samt även uppföljande analys med Google analytics och Tag manager</p>
 	<a href="http://ufs.nu/">Gå till Hemsida</a>
 	</div>
@@ -46,7 +47,7 @@
 <div class="project-scroll animated" style="background-image:url('<?php bloginfo('template_url'); ?>/img/landq.jpg');">
 <div class="overlay"></div>
 <div class="text animated">
-	<h1>Landqvist Handelsträdgård</h1>
+	<h2>Landqvist Handelsträdgård</h2>
 	<p>Även här skötte jag hela projektet från start till mål, samt även uppföljande analys med Google analytics och Tag manager</p>
 	<a href="http://landqvist-handelstradgard.se/">Gå till Hemsida</a>
 	</div>
@@ -54,7 +55,7 @@
 <div class="project-scroll animated" style="background-image:url('<?php bloginfo('template_url'); ?>/img/trepe.jpg');">
 <div class="overlay"></div>
 <div class="text animated">
-	<h1>Trepe bilvård</h1>
+	<h2>Trepe bilvård</h2>
 	<p>Även här skötte jag hela projektet från start till mål, samt även uppföljande analys med Google analytics och Tag manager</p>
 	<a href="http://trepebilvard.se/">Gå till Hemsida</a>
 	</div>

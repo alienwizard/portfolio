@@ -43,6 +43,12 @@ function theme_enqueue_scripts(){
 	wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
 	wp_enqueue_script('livereload');
 
+	wp_enqueue_script( 'functions', get_template_directory_uri() . '/js/functions.js', array ( 'jquery' ), 1.1, true);
+
+	wp_localize_script( 'functions', 'ajaxpagination', array(
+	'ajaxurl' => admin_url( 'admin-ajax.php' ),
+));
+
 	//wp_enqueue_style('swiper.min.css', get_bloginfo('template_url') . '/js/vendor/Swiper/dist/css/swiper.min.css');
 
 	//wp_enqueue_style('bootstrap.min.css', get_bloginfo('template_url') . '/js/vendor/bootstrap/dist/css/bootstrap.min.css');
@@ -179,5 +185,104 @@ function wpdocs_excerpt_more( $more ) {
     );
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+
+/*AJAX FOR GETTING THE DIFFERENT CATS OF PROJECTS*/
+
+
+
+global $wp_query;
+
+add_action('wp_ajax_my_ajax','my_ajax_get_posts');
+add_action('wp_ajax_nopriv_my_ajax','my_ajax_get_posts');
+
+function my_ajax_get_posts() {
+
+	echo $_POST['id'];
+
+	if ($_POST['id'] != 'all') {
+
+	 	$query_vars['category_name'] = $_POST['id'];
+
+	 }
+
+	 $query_vars['post_type'] = 'referens';
+	 $query_vars['posts_per_page'] = '-1';
+
+
+//	print_r($query_vars);
+
+
+	 // if post-parent == 0 use the post itself else get the children and display
+	 //if children has children, display them also
+	 //or get page and get children
+	 //start the right col with the title of the chosen cat and display it like an article with all the children below
+
+
+
+
+	 $posts = new WP_Query( $query_vars );
+
+	 $GLOBALS['wp_query'] = $posts;
+
+
+	  if( ! $posts->have_posts() ) { 
+        echo "no posts found";
+    }else{
+
+    	        while ( $posts->have_posts() ) {
+
+
+
+            $posts->the_post(); ?>
+            <div class="referens-item">
+
+            <div class="ref-img">
+            <?php $childid = get_the_ID();  ?>
+
+            <?php echo $childid; ?>
+
+            <?php $childarray = get_page_children($childid, $pages); ?>
+
+            <?php print_r($childarray);?>
+
+
+                        <?php 
+            the_post_thumbnail();
+            ?>
+
+            </div>
+
+            <div class="ref-text">
+
+            
+
+            <?php the_title('<h1>','</h1>'); ?>
+
+
+
+<?php // CHECk IF POST HAVE CHILDREN AND DISPLAY THEm?>
+
+
+            <?php
+            the_excerpt(); ?>
+
+            </div>
+
+            <div class="clearfix">
+
+            </div>
+            
+     <?php   }
+
+
+    }
+
+
+
+
+}
+
+
 
 ?>
