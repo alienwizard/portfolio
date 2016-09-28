@@ -37,10 +37,20 @@ header{
 		 align-items: center;
          margin: 0px;
 
+         @media(max-width:400px){
+            flex-wrap: wrap;
+         }
+
+
 		li{
 			flex-basis: 20%;
 			text-align: center;
 			font-weight: bold;
+
+                     @media(max-width:400px){
+            flex-basis: 100%;
+         }
+
 			a{
 				color: black;
 				text-decoration: none;
@@ -128,6 +138,8 @@ header{
 .left-info{
 	float:left;
 	width:70%;
+
+
 }
 
 .right-info{
@@ -145,8 +157,12 @@ article{
     border-top: none;
     padding: 10vh 0vh;
 
+     @media(max-width:700px){
+        border:5px;
+     }
+
     .fullH{
-        height: 90vh;
+        min-height: 90vh;
         padding:10vh;
             display: flex;
     flex-direction: row;
@@ -311,6 +327,11 @@ position: absolute;
 
                     float: left;
                     width: 30%;
+
+                    @media(max-width:700px){
+                        width: 100%;
+
+                    }
     		img{
     			max-width: 100%;
     			height: auto;
@@ -325,6 +346,11 @@ position: absolute;
     width: 55%;
     margin-left: 10%;
 
+     @media(max-width:700px){
+        width: 100%;
+        margin-left: 0px;
+     }
+
     a{
     display: block;
     border: black solid 1px;
@@ -334,6 +360,7 @@ position: absolute;
     text-align: center;
     margin: auto;
     margin-top: 20px;
+    padding:5px 0px;
 
 
         &:hover{
@@ -353,9 +380,10 @@ position: absolute;
 
     .title{
     	position: relative;
-    	color: white;
-    	font-size: 50px;
-
+font-size: 60px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px #ca8300;
     	&:before{
     		content: "";
     		position: absolute;
@@ -417,6 +445,10 @@ section#one{
     justify-content:space-around;
     align-items:center;
 
+        @media screen and (max-width:800px){
+       padding:19px;
+    }
+
     .social-row{
 
             display: flex;
@@ -457,6 +489,10 @@ section#about {
         font-weight: bold;
         margin: 0px
 
+    }
+
+    @media screen and (max-width:800px){
+        flex-basis: 100%;
     }
 
 }
@@ -548,6 +584,12 @@ section#kontakt{
    color:    #ec9a00;
 }
 
+
+    @media screen and (max-width:800px){
+        flex-basis: 100%;
+    }
+
+
 }
 
 }
@@ -556,6 +598,21 @@ section#kontakt{
 .leftInfo{
 	float:left;
 	width:60%;
+
+    .title{
+        margin-bottom: 10px;
+    }
+        .info{
+            margin:0px;
+            margin-bottom:40px;
+            width: 80%;
+
+            font-size: 20px;
+
+        color: white;
+        text-shadow: 1px 1px #ca8300;
+        
+    }
 	img{
 
 		height: 250px;
@@ -574,7 +631,7 @@ section#kontakt{
 .right-contact{
 	float:right;
 	width:30%;
-	color:white;
+	color:#ec9a00;
 
 	img{
 
@@ -583,12 +640,12 @@ section#kontakt{
 	}
 
 	a{
-		color: white;
+		color: #ec9a00;
 	}
 
 	.print{
 		display: inline-block;
-		background-color:white;
+		background-color:#ec9a00;
 		color: #f5deb3;
 		padding:5px 10px;
 		border-radius:2px;
@@ -618,24 +675,34 @@ section#kontakt{
 
     padding: 0px 10px;
 
+    @media(max-width:400px){
+
+        flex-wrap: wrap;
+
+
+    }
+
 
     li{
 
-        background-color:white;
-
         border-radius:50%;
         padding:20px;
-            background-color: #cea965;
-    color: white;
+    color: #502e2e;
     border-radius: 50%;
-    padding: 35px;
-    margin-right: 15px;
     transition: 0.5s ease all;
+
+
+    @media(max-width:400px){
+        flex-basis: 100%;
+
+        text-align: center;
+    }
 
     &:hover{
 
-        cursor: pointer;
-        background-color:yellow;
+cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 10px black;
 
     }
 
@@ -650,6 +717,11 @@ section#kontakt{
         span{
 
             font-size: 18px;
+
+
+                @media(max-width:400px){
+        display: inline-block;
+    }
 
             
 

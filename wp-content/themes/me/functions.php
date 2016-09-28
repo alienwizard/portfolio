@@ -178,6 +178,8 @@ register_taxonomy( 'uppdrag', 'worker', $args );
 
 }
 
+/*Excerpt*/
+
 function wpdocs_excerpt_more( $more ) {
     return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
         get_permalink( get_the_ID() ),
@@ -185,6 +187,11 @@ function wpdocs_excerpt_more( $more ) {
     );
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 /*AJAX FOR GETTING THE DIFFERENT CATS OF PROJECTS*/
@@ -197,8 +204,6 @@ add_action('wp_ajax_my_ajax','my_ajax_get_posts');
 add_action('wp_ajax_nopriv_my_ajax','my_ajax_get_posts');
 
 function my_ajax_get_posts() {
-
-	echo $_POST['id'];
 
 	if ($_POST['id'] != 'all') {
 
@@ -240,11 +245,8 @@ function my_ajax_get_posts() {
             <div class="ref-img">
             <?php $childid = get_the_ID();  ?>
 
-            <?php echo $childid; ?>
-
             <?php $childarray = get_page_children($childid, $pages); ?>
 
-            <?php print_r($childarray);?>
 
 
                         <?php 

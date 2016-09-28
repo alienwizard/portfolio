@@ -34,10 +34,22 @@ body header nav ul {
   margin: 0px;
 }
 
+@media (max-width: 400px) {
+  body header nav ul {
+    flex-wrap: wrap;
+  }
+}
+
 body header nav ul li {
   flex-basis: 20%;
   text-align: center;
   font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  body header nav ul li {
+    flex-basis: 100%;
+  }
 }
 
 body header nav ul li a {
@@ -127,8 +139,14 @@ body article {
   padding: 10vh 0vh;
 }
 
+@media (max-width: 700px) {
+  body article {
+    border: 5px;
+  }
+}
+
 body article .fullH {
-  height: 90vh;
+  min-height: 90vh;
   padding: 10vh;
   display: flex;
   flex-direction: row;
@@ -276,6 +294,12 @@ body article .container .referens-item .ref-img {
   width: 30%;
 }
 
+@media (max-width: 700px) {
+  body article .container .referens-item .ref-img {
+    width: 100%;
+  }
+}
+
 body article .container .referens-item .ref-img img {
   max-width: 100%;
   height: auto;
@@ -289,6 +313,13 @@ body article .container .referens-item .ref-text {
   margin-left: 10%;
 }
 
+@media (max-width: 700px) {
+  body article .container .referens-item .ref-text {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
 body article .container .referens-item .ref-text a {
   display: block;
   border: black solid 1px;
@@ -298,6 +329,7 @@ body article .container .referens-item .ref-text a {
   text-align: center;
   margin: auto;
   margin-top: 20px;
+  padding: 5px 0px;
 }
 
 body article .container .referens-item .ref-text a:hover {
@@ -311,8 +343,10 @@ body article .cont-wrap {
 
 body article .title {
   position: relative;
+  font-size: 60px;
+  text-transform: uppercase;
   color: white;
-  font-size: 50px;
+  text-shadow: 1px 1px #ca8300;
 }
 
 body article .title:before {
@@ -358,6 +392,12 @@ section#one #me {
   align-items: center;
 }
 
+@media screen and (max-width: 800px) {
+  .bot-section {
+    padding: 19px;
+  }
+}
+
 .bot-section .social-row {
   display: flex;
   flex-direction: row;
@@ -390,6 +430,12 @@ section#one #me {
   padding-bottom: 5px;
   font-weight: bold;
   margin: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .bot-section section#about {
+    flex-basis: 100%;
+  }
 }
 
 .bot-section section#kontakt {
@@ -484,10 +530,29 @@ section#one #me {
   color: #ec9a00;
 }
 
+@media screen and (max-width: 800px) {
+  .bot-section section#kontakt {
+    flex-basis: 100%;
+  }
+}
+
 /*CV STYLING*/
 .leftInfo {
   float: left;
   width: 60%;
+}
+
+.leftInfo .title {
+  margin-bottom: 10px;
+}
+
+.leftInfo .info {
+  margin: 0px;
+  margin-bottom: 40px;
+  width: 80%;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px #ca8300;
 }
 
 .leftInfo img {
@@ -506,7 +571,7 @@ section#one #me {
 .right-contact {
   float: right;
   width: 30%;
-  color: white;
+  color: #ec9a00;
 }
 
 .right-contact img {
@@ -515,12 +580,12 @@ section#one #me {
 }
 
 .right-contact a {
-  color: white;
+  color: #ec9a00;
 }
 
 .right-contact .print {
   display: inline-block;
-  background-color: white;
+  background-color: #ec9a00;
   color: #f5deb3;
   padding: 5px 10px;
   border-radius: 2px;
@@ -545,21 +610,31 @@ section#one #me {
   padding: 0px 10px;
 }
 
+@media (max-width: 400px) {
+  #cat-wrap {
+    flex-wrap: wrap;
+  }
+}
+
 #cat-wrap li {
-  background-color: white;
   border-radius: 50%;
   padding: 20px;
-  background-color: #cea965;
-  color: white;
+  color: #502e2e;
   border-radius: 50%;
-  padding: 35px;
-  margin-right: 15px;
   transition: 0.5s ease all;
+}
+
+@media (max-width: 400px) {
+  #cat-wrap li {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
 
 #cat-wrap li:hover {
   cursor: pointer;
-  background-color: yellow;
+  color: white;
+  text-shadow: 1px 1px 10px black;
 }
 
 #cat-wrap li i {
@@ -571,6 +646,12 @@ section#one #me {
 
 #cat-wrap li span {
   font-size: 18px;
+}
+
+@media (max-width: 400px) {
+  #cat-wrap li span {
+    display: inline-block;
+  }
 }
 
 footer {

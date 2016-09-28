@@ -7,11 +7,9 @@
 					if ( have_posts() ) {
 						while ( have_posts() ) {
 							the_post(); ?>
-							<img src="<?php the_post_thumbnail('large'); ?>"/>
 							<?php
 							//
 							// Post Content here
-							the_title();
 							the_content();
 			?>
 			<?php

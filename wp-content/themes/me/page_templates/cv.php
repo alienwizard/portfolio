@@ -11,6 +11,7 @@
 
 <div class="leftInfo">
 <h1 class="title">Johan Wendin</h1>
+<p class="info">Web developer based in Stockholm with a passion for user interaction and user experience design</p>
 <div class="top-section">
 <div class="me">
 
