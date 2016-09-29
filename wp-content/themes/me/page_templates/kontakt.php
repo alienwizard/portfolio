@@ -19,6 +19,7 @@ get_header(); ?>
 <section id="kontakt">
 <?php echo do_shortcode('[contact-form-7 id="61" title="Contact form 1"]');?>	
 </section>
+<div class="clearfix"></div>
 </div>
 
 </article>

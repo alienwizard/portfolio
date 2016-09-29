@@ -17,7 +17,7 @@
 
 <section class="fullH" id="one">
 
-<div id="me" class="img-scroll" style="background-image:url('<?php bloginfo('url'); ?>/wp-content/uploads/2016/09/Johan-1.jpg');">
+<div id="me" class="img-scroll" style="background-image:url('http://localhost:8080/johanwendin/wp-content/themes/me/img/Johan.jpg');">
 	<h1>Johan Wendin</h1>
 	<p>Wordpress, PHP, HTML, CSS, Javascript, Java, SQL, Node.js</p>
 </div>
