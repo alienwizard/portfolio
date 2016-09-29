@@ -32,11 +32,11 @@ switch ($hostname) {
         define('WP_ENV', 'development');
         break;
     
-    case 'johanwendin.se':
+    case 'staging.johanwendin.se':
         define('WP_ENV', 'staging');
         break;
 
-    case 'tmsab.se':
+    case 'johanwendin.se':
     default: 
         define('WP_ENV', 'production');
 }
