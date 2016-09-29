@@ -221,6 +221,12 @@ article{
 
     cursor: pointer;
 
+    @media(max-width:700px){
+        flex-basis: 100%;
+    }
+
+   
+
 
     .bak-img{
 
@@ -283,6 +289,24 @@ article{
     text-shadow: 1px 1px #ca8300;
     margin: 0px;
 
+    @media(max-width:700px){
+        font-size: 4vw;
+    }
+
+}
+
+h3{
+    @media(max-width:700px){
+        font-size: 2vw;
+    }
+}
+
+p{
+
+        @media(max-width:700px){
+        font-size: 1vw;
+    }
+
 }
         }
     }
@@ -336,6 +360,10 @@ article{
     top: -90px;
     text-align: center;
     
+     }
+
+     @media(max-width:400px){
+
      }
 
         }
@@ -734,6 +762,15 @@ section#kontakt{
 			font-size: 15px;
 		}
 	}
+}
+
+#two{
+    h1{
+        @media(max-width:780px){
+            position:initial;
+            font-size: 9vw;
+        }
+    }
 }
 
 #cat-wrap{

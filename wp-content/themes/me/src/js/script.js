@@ -3,6 +3,8 @@ jQuery(function ($) {
 
 $(document).ready(function(){
 
+var windowW = window.innerWidth;
+
 var header = $('header');
 
 var logoStartPos = $('header h3');
@@ -13,13 +15,20 @@ var scrollYStart = window.scrollY;
 
 var me = $('#me');
 
+var meStartPos = $('#me h1').css('top')
+
+var pos = parseInt(meStartPos, 10)
+
+console.log(pos);
+
+
 var prog = $('#page-prog ul')
 
 //When logo clicked show meny
 
 $(logoStartPos).click(function(){
 
-//console.log($(this).parent().parent());
+
 
 
 $('a',$(this).parent().parent()).css({
@@ -35,7 +44,7 @@ $('a',$(this).parent().parent()).css({
 
 
 //scroll function to make text on image move on scroll. Also show meny on scroll and hide when at the top
-console.log(window);
+
 
 
 $(window).scroll(function(){
@@ -80,10 +89,20 @@ $(window).scroll(function(){
 
 	}else if(window.scrollY === 0){
 
+						if(windowW > 800){
+
 
 					$('#me h1').css({
 				top: 0 + 'px',
 			});
+
+				}else{
+
+										$('#me h1').css({
+				top: '-75px',
+			});
+
+				}
 
 				$('article').css({
 				'margin-top': '0px',
@@ -106,17 +125,48 @@ $(window).scroll(function(){
 		});
 	}
 
+	
+
+//	console.log(me[0].clientHeight);
+
+	var scrollLimitTop = 0;
+
+
+	if (window.innerWidth < 800) {
+
+		var scrollLimitTop = me[0].getBoundingClientRect().top - 75 - $('header').height();
+	}else{
+
+		var scrollLimitTop = me[0].getBoundingClientRect().top - $('header').height();
+
+	}
+
+		var scrollimg = $('#me');
+
+
+		console.log(scrollimg.offset().top + scrollimg.height());
+		//console.log(scrollimg[0].getBoundingClientRect().top + scrollimg[0].clientHeight) - $('header').height();
+
+
+
 	//Check if user is within the zone for animated text
-	if(window.scrollY > me[0].offsetTop/2 && window.scrollY < me[0].clientHeight){
-			//console.log('in the zone');
+	if(window.scrollY < scrollimg.offset().top + scrollimg.height()  && scrollLimitTop < window.scrollY){
+
+
+
+		var val = scrollLimitTop + meStartPos;
 
 			$('#me h1').css({
-				top: window.scrollY - me[0].offsetTop/2,
+				top: pos - scrollLimitTop,
 			});
+
+				if(windowW > 800){
 
 			$('#me p').css({
 					opacity: 0,
 			})
+
+		}
 
 
 	}else{
@@ -127,6 +177,7 @@ $(window).scroll(function(){
 
 	}
 
+
 	//check if scrolled to section 2 adn animate it in
 
 	function isScrolledIntoView(elem){
@@ -136,8 +187,8 @@ $(window).scroll(function(){
 		for (var i = $(elem).length - 1; i >= 0; i--) {
 
 			var elementTop = $(elem)[i].getBoundingClientRect().top;
-			//console.log($(elem)[i]);
-			console.log($(elem)[i].getBoundingClientRect().top);
+
+
 
 			if (elementTop <= window.innerHeight) {
 
@@ -173,13 +224,9 @@ $(window).scroll(function(){
 
 	var isInView = isScrolledIntoView('#two .project-scroll');
 
-	//console.log(isInView);
 
 	if(window.scrollY + window.innerHeight  >= $('#two')[0].offsetTop + 50){
 
-		//console.log($('#two .project-scroll')[0].offsetTop);
-
-		console.log(this);
 
 	
 
@@ -190,19 +237,7 @@ $(window).scroll(function(){
 		$('#two h1').addClass('slideInUp');
 
 
-		/*
-
-		$('#two .project-scroll .text').css({
-			left: $('#two .project-scroll')[0].clientWidth - 100 + 'px',
-		})
-
-		$('#two .project-scroll .text').addClass('rotateInUpRight');
-
-		*/
-
-		//console.log($('#two .project-scroll'));
-
-		
+	
 
 
 	}else{
@@ -212,55 +247,9 @@ $(window).scroll(function(){
 		})
 
 		$('#two h1').removeClass('slideInUp');
-		/*
-		$('#two .project-scroll .text').removeClass('rotateInUpRight');
-		*/
-	}
-
-	
-
-
-	//check if scrolled to section 3 adn animate it in
-
-	//console.log(window.scrollY + window.innerHeight);
-	//console.log($('#two')[0].offsetTop + $('#two')[0].clientHeight);
-
-
-		if(window.scrollY + window.innerHeight > $('#two')[0].offsetTop + $('#two')[0].clientHeight){
-
-			//console.log('bigger');
-
-		//console.log('animate');
-/*
-		$('#three .project-scroll').css({
-			opacity: 1,
-		})
-
-		$('#three .project-scroll .text').css({
-			left: $('#three .project-scroll')[0].clientWidth - 100 + 'px',
-		})
-
-		$('#three .project-scroll').addClass('bounceInUp');
-
-		//console.log($('#three .project-scroll'));
-
-		$('#three .project-scroll .text').addClass('bounceInUp');
-		*/
-
-
-	}else{
-		/*
-
-		$('#three .project-scroll').css({
-			opacity: 0,
-		})
-
-		$('#three .project-scroll').removeClass('bounceInUp');
-
-		$('#three .project-scroll.text').removeClass('bounceInUp');
-		*/
 
 	}
+
 
 
 
@@ -288,7 +277,7 @@ $('.project-scroll')
 
 				$('.text',this).fadeIn('fast',function(){
 
-					console.log('faded');
+			
 
 					$(this).addClass('pulse');
 
