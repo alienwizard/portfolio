@@ -40,8 +40,6 @@ function theme_enqueue_scripts(){
 	wp_register_script('script', get_bloginfo('template_url') . '/js/script.min.js');
 	wp_enqueue_script('script');
 
-	wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
-	wp_enqueue_script('livereload');
 
 	wp_enqueue_script( 'functions', get_template_directory_uri() . '/js/functions.js', array ( 'jquery' ), 1.1, true);
 
