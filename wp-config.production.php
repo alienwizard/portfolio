@@ -32,6 +32,8 @@ define('DB_COLLATE', '');
 define('WP_HOME', 'http://johanwendin.se/');
 define('WP_SITEURL', 'http://johanwendin.se/');
 
+$table_prefix  = 'wp_';
+
 /**
  * For developers: WordPress debugging mode.
  *
