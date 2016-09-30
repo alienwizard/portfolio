@@ -28,6 +28,10 @@ header{
         height: 50px;
     }
 
+    .headerInnerWrap{
+        position:relative;
+    }
+
 	nav{
 
 		max-width: 1200px;
@@ -81,7 +85,7 @@ header{
 				text-transform: uppercase;
 				display: inline-block;
 				font-weight: bold;
-                opacity:0;
+                opacity:0.5;
                 transition: 1s ease all;
 
 			}
@@ -677,6 +681,12 @@ position: absolute;
     .cont-wrap{
     	max-width: 1200px;
     	margin: auto;
+        padding: 19px;
+
+        @media(max-width:600px){
+            padding:5px;
+        }
+
     }
 
     .title{
@@ -698,6 +708,7 @@ font-size: 60px;
     	&:after{
 
     	}
+
     }
 
     .project-section{
@@ -913,8 +924,19 @@ section#kontakt{
 	float:left;
 	width:60%;
 
+    @media(max-width:450px){
+        width: 100%;
+    }
+
     .title{
         margin-bottom: 10px;
+
+        @media(max-width:450px){
+
+            font-size: 12vw;
+        }
+
+
     }
         .info{
             margin:0px;
@@ -925,6 +947,11 @@ section#kontakt{
 
         color: white;
         text-shadow: 1px 1px #ca8300;
+
+        @media(max-width:450px){
+            width: 100%;
+            font-size: 6vw;
+        }
         
     }
 	img{
@@ -947,10 +974,29 @@ section#kontakt{
 	width:30%;
 	color:#ec9a00;
 
+    @media(max-width:600px){
+        font-size: 11px;
+    }
+
+    @media(max-width:450px){
+        width: 100%;
+        font-size: 18px;
+    }
+
+
+
 	img{
 
 		height: 250px;
 		width: auto;
+
+            @media(max-width:600px){
+
+                height: auto;
+
+                width: 100%;
+        
+    }
 	}
 
 	a{

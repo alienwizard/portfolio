@@ -25,6 +25,10 @@ body header {
   }
 }
 
+body header .headerInnerWrap {
+  position: relative;
+}
+
 body header nav {
   max-width: 1200px;
   margin: auto;
@@ -81,7 +85,7 @@ body header nav ul li a {
   text-transform: uppercase;
   display: inline-block;
   font-weight: bold;
-  opacity: 0;
+  opacity: 0.5;
   transition: 1s ease all;
 }
 
@@ -614,6 +618,13 @@ body article .container .referens-item .ref-text a:hover {
 body article .cont-wrap {
   max-width: 1200px;
   margin: auto;
+  padding: 19px;
+}
+
+@media (max-width: 600px) {
+  body article .cont-wrap {
+    padding: 5px;
+  }
 }
 
 body article .title {
@@ -829,8 +840,20 @@ section#one #me {
   width: 60%;
 }
 
+@media (max-width: 450px) {
+  .leftInfo {
+    width: 100%;
+  }
+}
+
 .leftInfo .title {
   margin-bottom: 10px;
+}
+
+@media (max-width: 450px) {
+  .leftInfo .title {
+    font-size: 12vw;
+  }
 }
 
 .leftInfo .info {
@@ -840,6 +863,13 @@ section#one #me {
   font-size: 20px;
   color: white;
   text-shadow: 1px 1px #ca8300;
+}
+
+@media (max-width: 450px) {
+  .leftInfo .info {
+    width: 100%;
+    font-size: 6vw;
+  }
 }
 
 .leftInfo img {
@@ -861,9 +891,29 @@ section#one #me {
   color: #ec9a00;
 }
 
+@media (max-width: 600px) {
+  .right-contact {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 450px) {
+  .right-contact {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
 .right-contact img {
   height: 250px;
   width: auto;
+}
+
+@media (max-width: 600px) {
+  .right-contact img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .right-contact a {

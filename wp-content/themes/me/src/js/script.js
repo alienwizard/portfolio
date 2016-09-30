@@ -131,7 +131,7 @@ $(window).scroll(function(){
 
 
 		$(navigation).css({
-			opacity:'0'
+			opacity:'0.5'
 		});
 	}
 

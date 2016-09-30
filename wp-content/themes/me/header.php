@@ -12,6 +12,8 @@
 </head>
 <body>
 <header>
+
+<div class="headerInnerWrap">
 	<nav>
 	<ul>
 		<li>
@@ -47,5 +49,6 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 </header>
