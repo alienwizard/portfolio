@@ -72,19 +72,25 @@ $(window).scroll(function(){
 				'margin-top': header[0].clientHeight,
 		});
 
+		if(windowW > 400){
 
 		$(logoStartPos).css({
 
 			'font-size': '40px',
 		});
 
+	}
+
 		$(header).css({
 			'position': 'fixed',
 		});
 
+		if(windowW > 400){
+
 		$(navigation).css({
 				'opacity':'1',
 		});
+	}
 
 
 	}else if(window.scrollY === 0){
@@ -115,15 +121,21 @@ $(window).scroll(function(){
 			'position': 'initial',
 		});
 
+		if(windowW > 400){
+
 		$(logoStartPos).css({
 
 			'font-size': '50px',
 		});
 
+
+
 		$(navigation).css({
 			opacity:'0'
 		});
 	}
+
+		}
 
 	
 

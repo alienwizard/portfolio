@@ -19,9 +19,21 @@ body header {
   position: relative;
 }
 
+@media (max-width: 400px) {
+  body header {
+    height: 50px;
+  }
+}
+
 body header nav {
   max-width: 1200px;
   margin: auto;
+}
+
+@media (max-width: 400px) {
+  body header nav {
+    display: none;
+  }
 }
 
 body header nav ul {
@@ -86,21 +98,6 @@ body header nav ul li h3 {
   cursor: pointer;
 }
 
-body header .responsivelogo h3 {
-  font-size: 50px;
-  margin: 5px 0px;
-  transition: 1s ease all;
-  cursor: pointer;
-  display: none;
-}
-
-@media (max-width: 400px) {
-  body header .responsivelogo h3 {
-    display: block;
-    float: left;
-  }
-}
-
 body header .responsivemenu {
   display: none;
   display: block;
@@ -109,6 +106,24 @@ body header .responsivemenu {
   left: 0px;
   right: 0px;
   bottom: 0px;
+}
+
+body header .responsivemenu .responsivelogo h3 {
+  font-size: 50px;
+  margin: 5px 0px;
+  transition: 1s ease all;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 400px) {
+  body header .responsivemenu .responsivelogo h3 {
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin: 10px 10px;
+    line-height: 30px;
+  }
 }
 
 body header .responsivemenu .bars {
@@ -170,6 +185,7 @@ body header .responsivemenu .popup {
   -ms-flex-pack: end;
   justify-content: flex-end;
   pointer-events: none;
+  z-index: 99;
   -webkit-perspective: 2000px;
   perspective: 2000px;
 }

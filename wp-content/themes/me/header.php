@@ -24,10 +24,11 @@
 	</ul>
 		
 	</nav>
-	<div class="responsivelogo">
+
+	<div class="responsivemenu">
+		<div class="responsivelogo">
 		<h3>JW</h3>
 	</div>
-	<div class="responsivemenu">
 		<div class="bars">
 			<a></a>
 		</div>
@@ -36,10 +37,12 @@
 				<a class="popclose"></a>
 				<div class="popmenu">
 					<ul>
-						<li>Hem</li>
-						<li>Projekt</li>
-						<li>CV</li>
-						<li>Kontaka mig</li>
+		<li>
+			<a href="<?php bloginfo('url'); ?>">Hem</a>
+		</li>
+		<li><a href="<?php bloginfo('url'); ?>/referensprojekt">Projekt</a></li>
+		<li><a href="<?php bloginfo('url'); ?>/cv">CV</a></li>
+		<li><a href="<?php bloginfo('url'); ?>/kontakta-mig">Kontakta mig</a></li>
 					</ul>
 				</div>
 			</div>

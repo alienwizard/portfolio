@@ -24,10 +24,20 @@ header{
 
     position:relative;
 
+    @media(max-width:400px){
+        height: 50px;
+    }
+
 	nav{
 
 		max-width: 1200px;
 		margin: auto;
+
+        @media(max-width:400px){
+
+            display: none;
+
+        }
 
 	ul{
 		list-style: none;
@@ -99,7 +109,19 @@ header{
 
 }
 
-.responsivelogo{
+
+
+.responsivemenu{
+
+    display: none;
+        display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    .responsivelogo{
     h3{
                 font-size: 50px;
                 margin:5px 0px;
@@ -111,21 +133,14 @@ header{
                 @media(max-width:400px){
                     display: block;
                     float: left;
+                    font-size: 30px;
+    margin: 10px 10px;
+    line-height: 30px;
 
                 }
     }
 
 }
-
-.responsivemenu{
-
-    display: none;
-        display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
 
     .bars{
         position:relative;
@@ -188,6 +203,7 @@ header{
     -ms-flex-pack: end;
     justify-content: flex-end;
     pointer-events: none;
+    z-index: 99;
     -webkit-perspective: 2000px;
     perspective: 2000px;
 
