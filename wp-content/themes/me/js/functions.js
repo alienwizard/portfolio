@@ -3,7 +3,7 @@
 	//alert('triggered');
 
 	/* <![CDATA[ */
-var ajaxpagination = {"ajaxurl":"http:\/\/localhost:8080/johanwendin\/wp-admin\/admin-ajax.php"};
+//var ajaxpagination = {"ajaxurl":"http:\/\/localhost:8080/johanwendin\/wp-admin\/admin-ajax.php"};
 /* ]]> */
     
     $(document).on( 'click', '#cat-wrap li', function( event ) {
