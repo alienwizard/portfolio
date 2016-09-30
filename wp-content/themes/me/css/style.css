@@ -132,6 +132,7 @@ body header .responsivemenu .bars {
   height: 50px;
   position: relative;
   float: right;
+  z-index: 99;
 }
 
 body header .responsivemenu .bars a {
