@@ -22,6 +22,8 @@ header{
     top: 0px;
     z-index: 99;
 
+    position:relative;
+
 	nav{
 
 		max-width: 1200px;
@@ -42,6 +44,17 @@ header{
          }
 
 
+         .logo{
+        display: block;
+
+
+        @media(max-width:400px){
+            display: none;
+         }
+
+         }
+
+
 		li{
 			flex-basis: 20%;
 			text-align: center;
@@ -50,6 +63,7 @@ header{
                      @media(max-width:400px){
             flex-basis: 100%;
          }
+
 
 			a{
 				color: black;
@@ -66,6 +80,8 @@ header{
 				max-height: 100px;
 				display: block;
 				margin: auto;
+
+
 			}
 
             h3{
@@ -80,6 +96,190 @@ header{
             }
 		}
 	}
+
+}
+
+.responsivelogo{
+    h3{
+                font-size: 50px;
+                margin:5px 0px;
+                transition: 1s ease all;
+                cursor: pointer;
+                display: none;
+
+
+                @media(max-width:400px){
+                    display: block;
+                    float: left;
+
+                }
+    }
+
+}
+
+.responsivemenu{
+
+    display: none;
+        display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    .bars{
+        position:relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    float: right;
+        a{
+            position: absolute;
+    width: 24px;
+    height: 3px;
+    border-radius: 1px;
+    background: #ca8300;
+        left: 13px;
+    top: 23px;
+    &:before{
+        content: "";
+
+            position: absolute;
+    width: 24px;
+    height: 3px;
+    border-radius: 1px;
+    background: #ca8300;
+        top: -9px;
+
+        }
+
+    &:after{
+        content: "";
+
+            position: absolute;
+    width: 24px;
+    height: 3px;
+    border-radius: 1px;
+    background: #ca8300;
+        top: 9px;
+
+    }
+    }
+    }
+
+    @media(max-width:400px){
+        display: block;
+    }
+
+
+     .popup{
+
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    right: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    pointer-events: none;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+
+    .popcontainer{
+        width: 100%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 50px 100px rgba(50,50,93,.1),0 15px 35px rgba(50,50,93,.15),0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    font-size: 17px;
+    line-height: 40px;
+    white-space: nowrap;
+    -webkit-transform: rotate3d(1,1,0,-15deg);
+    transform: rotate3d(1,1,0,-15deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    opacity: 0;
+    will-change: transform,opacity;
+    -webkit-transition-property: opacity,-webkit-transform;
+    transition-property: opacity,-webkit-transform;
+    transition-property: transform,opacity;
+    transition-property: transform,opacity,-webkit-transform;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+
+    .popclose{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 51px;
+    height: 51px;
+    font-size: 0;
+    cursor: pointer;
+    display: block;
+    z-index: 999999;
+
+    &:before{
+
+            content: '';
+    position: absolute;
+    background: #ca8300;
+    border-radius: 1px;
+    left: 14px;
+    right: 14px;
+    top: 24px;
+    height: 3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: background .1s;
+    transition: background .1s;
+
+    }
+    &:after{
+
+            content: '';
+    position: absolute;
+    background: #ca8300;
+    border-radius: 1px;
+    left: 14px;
+    right: 14px;
+    top: 24px;
+    height: 3px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: background .1s;
+    transition: background .1s;
+
+    }
+    }
+
+    }
+
+
+     }
+
+
+}
+
+.responsivemenu.popupactive{
+
+    .popup{
+
+        .popcontainer{
+            opacity: 1;
+            pointer-events: auto;
+            -webkit-transform: none;
+    transform: none;
+        }
+
+    }
 
 }
 

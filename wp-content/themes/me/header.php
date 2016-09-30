@@ -24,5 +24,25 @@
 	</ul>
 		
 	</nav>
-	<div class="responsivemenu"></div>
+	<div class="responsivelogo">
+		<h3>JW</h3>
+	</div>
+	<div class="responsivemenu">
+		<div class="bars">
+			<a></a>
+		</div>
+		<div class="popup">
+			<div class="popcontainer">
+				<a class="popclose"></a>
+				<div class="popmenu">
+					<ul>
+						<li>Hem</li>
+						<li>Projekt</li>
+						<li>CV</li>
+						<li>Kontaka mig</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </header>

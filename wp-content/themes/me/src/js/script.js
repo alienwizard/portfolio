@@ -310,6 +310,29 @@ $('.project-scroll')
 
 	})
 
+	/*EVENTS FOR THE RESPONSIVE MENU*/
+
+	$('.bars').click(function(){
+		console.log($('.responsivemenu'));
+		$('.responsivemenu').addClass('popupactive');
+	});
+
+	$('.popclose').click(function(){
+		$('.responsivemenu').removeClass('popupactive');
+	})
+
+	document.addEventListener('click', function(e){
+
+		var e = e || window.event;
+
+		var target = e.target || e.srcElement;
+
+		console.log(target);
+
+	}, false);
+
+
+
 })
 
 });
