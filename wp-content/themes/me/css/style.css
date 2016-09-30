@@ -400,6 +400,7 @@ body article .fullH .project-scroll {
 @media (max-width: 700px) {
   body article .fullH .project-scroll {
     flex-basis: 100%;
+    opacity: 1;
   }
 }
 
