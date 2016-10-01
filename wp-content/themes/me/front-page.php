@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<article>
+<article class="full-page">
+<div id="canvas"></div>
 <!--
 <div class="prog-container">
 

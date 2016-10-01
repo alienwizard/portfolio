@@ -4,6 +4,7 @@
 
 get_header(); ?>
 <article>
+<div id="canvas"></div>
 <div class="cont-wrap">
 <div class="bot-section">
 <section id="about">

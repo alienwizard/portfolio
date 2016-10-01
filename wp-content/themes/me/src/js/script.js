@@ -1,3 +1,7 @@
+
+
+
+
 //init everything and get original values
 jQuery(function ($) {
 
@@ -19,10 +23,70 @@ var meStartPos = $('#me h1').css('top')
 
 var pos = parseInt(meStartPos, 10)
 
-console.log(pos);
-
-
 var prog = $('#page-prog ul')
+
+console.log($('.full-page').height());
+
+console.log($('.full-page').width());
+
+
+//Constructor for the animated pixels
+function Pixel(speed, locationx, locationy, color){
+
+	//pixel bör ha en unik färg 
+
+	this.speed = speed;
+	this.locationx = locationx;
+	this.locationy = locationy
+	this.color = color;
+
+	var sizex = Math.floor(Math.random() * 2) + 1;
+	var sizey = Math.floor(Math.random() * 2) + 1;
+
+	this.html = '<div class="pixel" style="background-color:'+ color +'; left:'+locationx+'px; top:'+ locationy+ 'px;height:'+sizey+'px;width:'+sizex+'px;"></div>'; 
+
+	//
+
+}
+
+var documentW = $('.full-page').width();
+var documentH = $('.full-page').height();
+
+var canvas = $('#canvas')
+
+var pixelArray = [];
+
+pixelcount = 200;
+
+
+for (var i = pixelcount - 1; i >= 0; i--) {
+
+	var locationtX =  Math.floor(Math.random() * documentW) + 1;
+	var locationY = Math.floor(Math.random() * documentH) + 1;
+
+
+
+	pixelArray.push(new Pixel(2, locationtX, locationY, '#ca8300'));
+	//console.log(pixelArray[i]);
+	//console.log();
+
+	//canvas[0].innerHTML += pixelArray[i];
+
+}
+
+pixelArray.forEach(function(e){
+
+	canvas[0].innerHTML += e.html;
+})
+
+var testpixel = new Pixel(3, locationtX, locationY, '#ca8300');
+
+//console.log(testpixel)
+
+//console.log(testpixel.speed);
+
+
+
 
 //When logo clicked show meny
 
@@ -30,10 +94,15 @@ $(logoStartPos).click(function(){
 
 
 
-
+if($('a',$(this).parent().parent()).css('opacity') == '0.5' || $('a',$(this).parent().parent()).css('opacity') == '1'){
 $('a',$(this).parent().parent()).css({
+	opacity:0,
+})
+}else{
+	$('a',$(this).parent().parent()).css({
 	opacity:1,
 })
+}
 
 
 });
@@ -45,12 +114,52 @@ $('a',$(this).parent().parent()).css({
 
 //scroll function to make text on image move on scroll. Also show meny on scroll and hide when at the top
 
-
+var lastScrollTop = 0;
 
 $(window).scroll(function(){
 
 
 	var scrollYpos = window.scrollY;
+
+		var st = $(this).scrollTop();
+
+	console.log('window: '+ st);
+
+   if (st > lastScrollTop){
+   	console.log('down');
+       console.log(Math.random() * 3 -2);
+       var pixelChange = Math.random() * 3 + -2
+   } else {
+   	console.log('up');
+      console.log(Math.random() * 3 + 1);
+      var pixelChange = Math.random() * 3 + 1
+   }
+   
+   lastScrollTop = st;
+
+
+
+
+
+for (var i = $('.pixel').length - 1; i >= 0; i--) {
+	//console.log($('.pixel')[i].style.top);
+
+	var currentPixel = $('.pixel')[i];
+
+	var currentPixelPos = $(currentPixel).css('top')
+
+	
+
+
+
+
+
+	var lastpixelpos = parseInt(currentPixelPos, 10);
+
+	$(currentPixel).css({
+		top: lastpixelpos + pixelChange * 2
+	})
+}
 
 	$('.prog-container').css({
 			//top: scrollYpos,
@@ -137,9 +246,6 @@ $(window).scroll(function(){
 
 		}
 
-	
-
-//	console.log(me[0].clientHeight);
 
 	var scrollLimitTop = 0;
 

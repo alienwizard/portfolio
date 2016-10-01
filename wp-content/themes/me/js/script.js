@@ -3,20 +3,18 @@ jQuery(function($){$(document).ready(function(){var windowW=window.innerWidth;va
 //Constructor for the animated pixels
 function Pixel(speed,locationx,locationy,color){
 //pixel bör ha en unik färg 
-this.speed=speed;this.locationx=locationx;this.locationy=locationy;this.color=color;var sizex=Math.floor(Math.random()*2)+1;var sizey=Math.floor(Math.random()*2)+1;this.html='<div class="pixel" style="background-color:'+color+"; left:"+locationx+"px; top:"+locationy+"px;height:"+sizey+"px;width:"+sizex+'px;"></div>'}var documentW=$(".full-page").width();var documentH=$(".full-page").height();var canvas=$("#canvas");var pixelArray=[];pixelcount=200;for(var i=pixelcount-1;i>=0;i--){var locationtX=Math.floor(Math.random()*documentW)+1;var locationY=Math.floor(Math.random()*documentH)+1;pixelArray.push(new Pixel(2,locationtX,locationY,"#ca8300"))}pixelArray.forEach(function(e){canvas[0].innerHTML+=e.html});var testpixel=new Pixel(3,locationtX,locationY,"#ca8300");
-//console.log(testpixel)
-//console.log(testpixel.speed);
+this.speed=speed;this.locationx=locationx;this.locationy=locationy;this.color=color;this.html='<div class="pixel" style="color:'+color+';"></div>'}var documentW=$(".full-page").width();var documentH=$(".full-page").height();var canvas=$("#canvas");var pixelArray=[];pixelcount=200;for(var i=pixelcount-1;i>=0;i--){var locationtX=Math.floor(Math.random()*documentW)+1;var locationY=Math.floor(Math.random()*documentH)+1;pixelArray.push(new Pixel(2,locationtX,locationY,"#ca8300"));console.log(pixelArray[i]);console.log()}
 //When logo clicked show meny
 $(logoStartPos).click(function(){if($("a",$(this).parent().parent()).css("opacity")=="0.5"||$("a",$(this).parent().parent()).css("opacity")=="1"){$("a",$(this).parent().parent()).css({opacity:0})}else{$("a",$(this).parent().parent()).css({opacity:1})}});
 //Keep track of page position on navbar pitchfork thing
 //scroll function to make text on image move on scroll. Also show meny on scroll and hide when at the top
-var lastScrollTop=0;$(window).scroll(function(){var scrollYpos=window.scrollY;var st=$(this).scrollTop();console.log("window: "+st);if(st>lastScrollTop){console.log("down");console.log(Math.random()*3-2);var pixelChange=Math.random()*3+-2}else{console.log("up");console.log(Math.random()*3+1);var pixelChange=Math.random()*3+1}lastScrollTop=st;for(var i=$(".pixel").length-1;i>=0;i--){
-//console.log($('.pixel')[i].style.top);
-var currentPixel=$(".pixel")[i];var currentPixelPos=$(currentPixel).css("top");var lastpixelpos=parseInt(currentPixelPos,10);$(currentPixel).css({top:lastpixelpos+pixelChange*2})}$(".prog-container").css({});
+$(window).scroll(function(){var scrollYpos=window.scrollY;$(".prog-container").css({});
 //Get window scroll position
 $(header).css({});
 //Check if scroll is past the header
-if(window.scrollY>0){$("article").css({"margin-top":header[0].clientHeight});if(windowW>400){$(logoStartPos).css({"font-size":"40px"})}$(header).css({position:"fixed"});if(windowW>400){$(navigation).css({opacity:"1"})}}else if(window.scrollY===0){if(windowW>800){$("#me h1").css({top:0+"px"})}else{$("#me h1").css({top:"-75px"})}$("article").css({"margin-top":"0px"});$(header).css({position:"initial"});if(windowW>400){$(logoStartPos).css({"font-size":"50px"});$(navigation).css({opacity:"0.5"})}}var scrollLimitTop=0;if(window.innerWidth<800){var scrollLimitTop=me[0].getBoundingClientRect().top-75-$("header").height()}else{var scrollLimitTop=me[0].getBoundingClientRect().top-$("header").height()}var scrollimg=$("#me");console.log(scrollimg.offset().top+scrollimg.height());
+if(window.scrollY>0){$("article").css({"margin-top":header[0].clientHeight});if(windowW>400){$(logoStartPos).css({"font-size":"40px"})}$(header).css({position:"fixed"});if(windowW>400){$(navigation).css({opacity:"1"})}}else if(window.scrollY===0){if(windowW>800){$("#me h1").css({top:0+"px"})}else{$("#me h1").css({top:"-75px"})}$("article").css({"margin-top":"0px"});$(header).css({position:"initial"});if(windowW>400){$(logoStartPos).css({"font-size":"50px"});$(navigation).css({opacity:"0.5"})}}
+//	console.log(me[0].clientHeight);
+var scrollLimitTop=0;if(window.innerWidth<800){var scrollLimitTop=me[0].getBoundingClientRect().top-75-$("header").height()}else{var scrollLimitTop=me[0].getBoundingClientRect().top-$("header").height()}var scrollimg=$("#me");console.log(scrollimg.offset().top+scrollimg.height());
 //console.log(scrollimg[0].getBoundingClientRect().top + scrollimg[0].clientHeight) - $('header').height();
 //Check if user is within the zone for animated text
 if(window.scrollY<scrollimg.offset().top+scrollimg.height()&&scrollLimitTop<window.scrollY){var val=scrollLimitTop+meStartPos;$("#me h1").css({top:pos-scrollLimitTop});if(windowW>800){$("#me p").css({opacity:0})}}else{$("#me p").css({opacity:1})}

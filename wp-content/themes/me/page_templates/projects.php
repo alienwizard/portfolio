@@ -5,6 +5,7 @@ get_header();
 ?>
 
 <article id="referenser">
+<div id="canvas"></div>
 
 <div class="container" ">
 

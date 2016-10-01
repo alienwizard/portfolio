@@ -40,11 +40,17 @@
 				<div class="popmenu">
 					<ul>
 		<li>
-			<a href="<?php bloginfo('url'); ?>">Hem</a>
+			<a href="<?php bloginfo('url'); ?>"><i class="fa fa-home" aria-hidden="true"></i><span>Hem</span></a>
 		</li>
-		<li><a href="<?php bloginfo('url'); ?>/referensprojekt">Projekt</a></li>
-		<li><a href="<?php bloginfo('url'); ?>/cv">CV</a></li>
-		<li><a href="<?php bloginfo('url'); ?>/kontakta-mig">Kontakta mig</a></li>
+		<li>
+				<a href="<?php bloginfo('url'); ?>/referensprojekt"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>Projekt</span></a>
+		</li>
+		<li>
+				
+				<a href="<?php bloginfo('url'); ?>/cv"><i class="fa fa-file-text" aria-hidden="true"></i><span>CV</span></a>
+		</li>
+		<li>
+				<a href="<?php bloginfo('url'); ?>/kontakta-mig"><i class="fa fa-envelope" aria-hidden="true"></i><span>Kontakta mig</span></a></li>
 					</ul>
 				</div>
 			</div>
