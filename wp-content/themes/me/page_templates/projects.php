@@ -4,7 +4,7 @@ get_header();
 
 ?>
 
-<article id="referenser">
+<article class="full-page" id="referenser">
 <div id="canvas"></div>
 
 <div class="container" ">

@@ -3,7 +3,7 @@
 
 
 get_header(); ?>
-<article>
+<article class="full-page">
 <div id="canvas"></div>
 <div class="cont-wrap">
 <div class="bot-section">

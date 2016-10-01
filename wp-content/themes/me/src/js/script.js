@@ -171,19 +171,6 @@ switch(dir){
 	})
 }
 
-	$('.prog-container').css({
-			//top: scrollYpos,
-	});
-
-	//Get window scroll position
-	
-
-	$(header).css({
-		//'margin-top':scrollYpos,
-	});
-
-
-
 	//Check if scroll is past the header
 	if (window.scrollY > 0) {
 
@@ -218,14 +205,16 @@ switch(dir){
 
 
 					$('#me h1').css({
-				top: 0 + 'px',
+				top: meStartPos,
 			});
 
 				}else{
+				
 
 										$('#me h1').css({
-				top: '-75px',
+				top: meStartPos,
 			});
+			
 
 				}
 
@@ -237,7 +226,7 @@ switch(dir){
 
 
 		$(header).css({
-			'position': 'initial',
+			'position': 'relative',
 		});
 
 		if(windowW > 400){
@@ -272,9 +261,8 @@ switch(dir){
 		var scrollimg = $('#me');
 
 
-		console.log(scrollimg.offset().top + scrollimg.height());
-		//console.log(scrollimg[0].getBoundingClientRect().top + scrollimg[0].clientHeight) - $('header').height();
-
+		
+	
 
 
 	//Check if user is within the zone for animated text
@@ -307,6 +295,10 @@ switch(dir){
 
 
 	//check if scrolled to section 2 adn animate it in
+
+	console.log('windowwidth: '+window.innerWidth);
+
+	if (window.innerWidth > 600) {
 
 	function isScrolledIntoView(elem){
 
@@ -350,8 +342,13 @@ switch(dir){
 
 	}
 
+}
+
+	if (window.innerWidth > 600) {
+
 	var isInView = isScrolledIntoView('#two .project-scroll');
 
+}
 
 	if(window.scrollY + window.innerHeight  >= $('#two')[0].offsetTop + 50){
 

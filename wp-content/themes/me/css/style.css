@@ -373,6 +373,10 @@ body .right-info {
   width: 30%;
 }
 
+body #canvas {
+  z-index: 1;
+}
+
 body .pixel {
   position: absolute;
 }
@@ -495,6 +499,12 @@ body article .fullH .project-scroll .text {
   z-index: 99;
 }
 
+@media (max-width: 700px) {
+  body article .fullH .project-scroll .text {
+    width: 90%;
+  }
+}
+
 body article .fullH .project-scroll .text a {
   background-color: #ec9a01;
   color: #ffffff;
@@ -520,19 +530,19 @@ body article .fullH .project-scroll h2 {
 
 @media (max-width: 700px) {
   body article .fullH .project-scroll h2 {
-    font-size: 4vw;
+    font-size: 25px;
   }
 }
 
 @media (max-width: 700px) {
   body article .fullH .project-scroll h3 {
-    font-size: 2vw;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 700px) {
   body article .fullH .project-scroll p {
-    font-size: 1vw;
+    font-size: 16px;
   }
 }
 
@@ -580,6 +590,19 @@ body article #me h1 {
     left: 0px;
     top: -90px;
     text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  body article #me h1 {
+    top: -65px;
+  }
+}
+
+@media (max-width: 470px) {
+  body article #me h1 {
+    font-size: 12vw;
+    top: -50px;
   }
 }
 
@@ -673,6 +696,8 @@ body article .container .referens-item .ref-text a:hover {
 body article .cont-wrap {
   max-width: 1200px;
   margin: auto;
+  position: relative;
+  z-index: 99;
   padding: 19px;
 }
 
