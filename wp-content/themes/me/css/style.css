@@ -15,7 +15,7 @@ body header {
   background: white;
   transition: all 1s ease;
   top: 0px;
-  z-index: 99;
+  z-index: 9999999;
   position: relative;
 }
 
@@ -1018,6 +1018,19 @@ section#one #me {
   float: left;
   margin: 0px;
   font-size: 15px;
+}
+
+@media (max-width: 780px) {
+  #two {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 780px) {
+  #two .project-scroll {
+    height: 290px;
+    margin: 50px 0px;
+  }
 }
 
 @media (max-width: 780px) {

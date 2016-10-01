@@ -22,7 +22,7 @@ header{
     background: white;
     transition: all 1s ease;
     top: 0px;
-    z-index: 99;
+    z-index: 9999999;
 
     position:relative;
 
@@ -1123,6 +1123,18 @@ section#kontakt{
 }
 
 #two{
+    
+    @media(max-width:780px){
+        padding-top: 100px;
+    }
+
+    .project-scroll{
+
+         @media(max-width:780px){
+            height: 290px;
+                margin: 50px 0px;
+         }
+    }
     h1{
         @media(max-width:780px){
             position:initial;
