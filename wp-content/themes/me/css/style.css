@@ -22,6 +22,7 @@ body header {
 @media (max-width: 400px) {
   body header {
     height: 50px;
+    position: fixed;
   }
 }
 

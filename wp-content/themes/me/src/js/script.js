@@ -170,7 +170,7 @@ switch(dir){
 	
 	$(currentPixel).css({
 		transform: 'translate(0px,' + pixelChange +'px)',
-		transition: 'ease all ' + pixelChangeSpeed + 's'
+		transition: 'ease-out all ' + pixelChangeSpeed + 's'
 	});
 }
 
