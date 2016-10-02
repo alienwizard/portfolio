@@ -355,6 +355,10 @@ if (window.location.pathname == /johanwendin/ || window.location.pathname == '/'
 
 }
 
+//only fp
+
+if (window.location.pathname == /johanwendin/ || window.location.pathname == '/') {
+
 	if (window.innerWidth > 600) {
 
 	var isInView = isScrolledIntoView('#two .project-scroll');
@@ -389,10 +393,11 @@ if (window.location.pathname == /johanwendin/ || window.location.pathname == '/'
 
 
 
-
+}
 
 
 });
+
 
 $('.project-scroll')
 	.mouseenter(function(){
