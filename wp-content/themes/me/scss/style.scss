@@ -124,6 +124,8 @@ header{
 
     .pixel{
 
+        transition: 0.5s ease all;
+
     }
 }
 
@@ -443,6 +445,7 @@ header{
 
 .pixel{
     position: absolute;
+    transition: 1.5s ease all;
     
 }
 
@@ -642,6 +645,7 @@ p{
 
 
     h1{
+        transition:1s ease all;
     position: absolute;
     right: -600px;
     left: 339px;
@@ -1207,6 +1211,32 @@ cursor: pointer;
     }
 }
 
+article.referens.single{
+
+    .cont-wrap{
+        width: 80%;
+        margin: auto;
+
+
+        @media(max-width:600px){
+
+            width: 90%;
+        }
+
+
+
+    img{
+
+        max-width: 1020px;
+
+        width: 100%;
+        height: auto;
+    }
+
+
+    }
+}
+
 
 
 footer{
@@ -1220,3 +1250,4 @@ footer{
     	text-decoration: none;
     }
 }
+

@@ -153,10 +153,10 @@ for (var i = $('.pixel').length - 1; i >= 0; i--) {
 
 switch(dir){
 		case 'up':
-		var pixelChange = Math.random() * 3 + 1
+		var pixelChange = (Math.random() * 10 ) - 5
 		break;
 		case 'down':
-		var pixelChange = Math.random() * 3 + -2
+		var pixelChange = (Math.random() * 10 ) + 5
 		break;
 		default:
 		var pixelChange = Math.random() * 3 + -2
@@ -164,11 +164,14 @@ switch(dir){
 
 		}
 
-	var lastpixelpos = parseInt(currentPixelPos, 10);
+		var pixelChangeSpeed = (Math.random() * 2 ) + 1;
 
+	var lastpixelpos = parseInt(currentPixelPos, 10);
+	
 	$(currentPixel).css({
-		top: lastpixelpos + pixelChange * 2
-	})
+		transform: 'translate(0px,' + pixelChange +'px)',
+		transition: 'ease all ' + pixelChangeSpeed + 's'
+	});
 }
 
 	//Check if scroll is past the header

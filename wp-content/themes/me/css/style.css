@@ -110,6 +110,10 @@ body header #canvas {
   right: 0px;
 }
 
+body header #canvas .pixel {
+  transition: 0.5s ease all;
+}
+
 body header .responsivemenu {
   display: none;
   position: absolute;
@@ -379,6 +383,7 @@ body #canvas {
 
 body .pixel {
   position: absolute;
+  transition: 1.5s ease all;
 }
 
 body article {
@@ -565,6 +570,7 @@ body article #me {
 }
 
 body article #me h1 {
+  transition: 1s ease all;
   position: absolute;
   right: -600px;
   left: 339px;
@@ -1089,6 +1095,23 @@ section#one #me {
   #cat-wrap li span {
     display: inline-block;
   }
+}
+
+article.referens.single .cont-wrap {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  article.referens.single .cont-wrap {
+    width: 90%;
+  }
+}
+
+article.referens.single .cont-wrap img {
+  max-width: 1020px;
+  width: 100%;
+  height: auto;
 }
 
 footer {
