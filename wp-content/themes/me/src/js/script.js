@@ -254,7 +254,7 @@ switch(dir){
 	console.log(window.location.pathname);
 
 
-	if (window.location.pathname == /johanwendin/) {
+	if (window.location.pathname == /johanwendin/ || '/') {
 
 
 	if (window.innerWidth < 800) {
@@ -273,7 +273,7 @@ switch(dir){
 
 		
 	//IF FP
-if (window.location.pathname == /johanwendin/) {
+if (window.location.pathname == /johanwendin/ || '/') {
 
 	//Check if user is within the zone for animated text
 	if(window.scrollY < scrollimg.offset().top + scrollimg.height()  && scrollLimitTop < window.scrollY){
