@@ -40,7 +40,7 @@ function Pixel(speed, locationx, locationy, color){
 	this.locationy = locationy
 	this.color = color;
 
-	var sizex = Math.floor(Math.random() * 3) + 1;
+	var sizex = (Math.random() * 3) + 1;
 
 	this.html = '<div class="pixel" style="background-color:'+ color +'; left:'+locationx+'px; top:'+ locationy+ 'px;height:'+sizex+'px;width:'+sizex+'px;"></div>'; 
 
@@ -78,7 +78,6 @@ pixelArray.forEach(function(e){
 	canvas[0].innerHTML += e.html;
 })
 
-var testpixel = new Pixel(3, locationtX, locationY, '#ca8300');
 
 //console.log(testpixel)
 
@@ -122,16 +121,11 @@ $(window).scroll(function(){
 
 		var st = $(this).scrollTop();
 
-	console.log('window: '+ st);
 
    if (st > lastScrollTop){
-   	console.log('down');
-       console.log(Math.random() * 3 -2);
        var dir = 'down'
        
    } else {
-   	console.log('up');
-      console.log(Math.random() * 3 + 1);
       var dir = 'up'
       
    }
@@ -153,10 +147,10 @@ for (var i = $('.pixel').length - 1; i >= 0; i--) {
 
 switch(dir){
 		case 'up':
-		var pixelChange = (Math.random() * 10 ) - 5
+		var pixelChange = (Math.random() * 50 ) - 5
 		break;
 		case 'down':
-		var pixelChange = (Math.random() * 10 ) + 5
+		var pixelChange = (Math.random() * 50 ) + 5
 		break;
 		default:
 		var pixelChange = Math.random() * 3 + -2

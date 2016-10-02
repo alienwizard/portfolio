@@ -41,7 +41,7 @@
 <div class="overlay"></div>
 <div class="text animated">
 	<h2>UFS i Uppsala</h2>
-	<p>Även här skötte jag hela projektet från start till mål, samt även uppföljande analys med Google analytics och Tag manager</p>
+	<p>Jag drev hela projektet från start till mål, kundkontakt och utveckling. samt även uppföljande analys med Google analytics och Tag manager</p>
 	<a href="http://ufs.nu/">Gå till Hemsida</a>
 	</div>
 </div>
@@ -49,7 +49,7 @@
 <div class="overlay"></div>
 <div class="text animated">
 	<h2>Landqvist Handelsträdgård</h2>
-	<p>Även här skötte jag hela projektet från start till mål, samt även uppföljande analys med Google analytics och Tag manager</p>
+	<p>Ett av mina första hemsideprojekt. Från inledande möte med kund till lansering och analys av hemsidan</p>
 	<a href="http://landqvist-handelstradgard.se/">Gå till Hemsida</a>
 	</div>
 </div>
@@ -57,7 +57,7 @@
 <div class="overlay"></div>
 <div class="text animated">
 	<h2>Trepe bilvård</h2>
-	<p>Även här skötte jag hela projektet från start till mål, samt även uppföljande analys med Google analytics och Tag manager</p>
+	<p>Arbete av bilverkstad. Studie i franchiseing då hemsidan skulle förhålla sig till Autoexperten</p>
 	<a href="http://trepebilvard.se/">Gå till Hemsida</a>
 	</div>
 </div>
