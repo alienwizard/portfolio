@@ -40,7 +40,7 @@ function Pixel(speed, locationx, locationy, color){
 	this.locationy = locationy
 	this.color = color;
 
-	var sizex = (Math.random() * 3) + 1;
+	var sizex = (Math.random() * 2) + 0.8;
 
 	this.html = '<div class="pixel" style="background-color:'+ color +'; left:'+locationx+'px; top:'+ locationy+ 'px;height:'+sizex+'px;width:'+sizex+'px;"></div>'; 
 

@@ -32,7 +32,7 @@
 <div class="overlay"></div>
 <div class="text animated">
 	<h2 class="">Traktor och Maskin i Sörmland AB</h2>
-	<p>Projekt om jag drev från början till slut. Jag skötte all kundkontatk samt all utveckling</p>
+	<p>Projektledning innefattande kundkontakt och utveckling. Sida i Wordpress med instagramflöde.</p>
 	<a href="http://tmsab.se/">Gå till Hemsida</a>
 	</div>
 </div>
@@ -40,7 +40,7 @@
 <div class="overlay"></div>
 <div class="text animated">
 	<h2>UFS i Uppsala</h2>
-	<p>Hemsideprojekt åt en byggentreprenör i Uppsla, kundkontakt och utveckling. Jag utförde även uppföljande analys med Google analytics och Tag manager</p>
+	<p>Hemsideprojekt åt en byggentreprenör i Uppsla, kundkontakt och utveckling. Jag utförde även uppföljande analys med Google analytics och Tag manager.</p>
 	<a href="http://ufs.nu/">Gå till Hemsida</a>
 	</div>
 </div>
@@ -48,7 +48,7 @@
 <div class="overlay"></div>
 <div class="text animated">
 	<h2>Landqvist Handelsträdgård</h2>
-	<p>Ett av mina första hemsideprojekt. Från inledande möte med kund till lansering och analys av hemsidan</p>
+	<p>Hemsida där fokus låg på att bygga en hemsida . Från inledande möte med kund till lansering och analys av hemsidan</p>
 	<a href="http://landqvist-handelstradgard.se/">Gå till Hemsida</a>
 	</div>
 </div>
@@ -56,7 +56,7 @@
 <div class="overlay"></div>
 <div class="text animated">
 	<h2>Trepe bilvård</h2>
-	<p>Arbete av bilverkstad. Studie i franchiseing då hemsidan skulle förhålla sig till Autoexperten</p>
+	<p>Arbete åt en bilverkstad i Uppsala. Studie i franchiseing då hemsidan skulle förhålla sig till Autoexperten.</p>
 	<a href="http://trepebilvard.se/">Gå till Hemsida</a>
 	</div>
 </div>

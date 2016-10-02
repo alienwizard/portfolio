@@ -82,6 +82,7 @@
 				<p>SASS</p>
 				<p>SQL</p>
 				<p>Node.js</p>
+				<p>React</p>
 				<p>Angular.js</p>
 				<a href="https://github.com/alienwizard">Git</a>
 				<p>Grunt</p>
