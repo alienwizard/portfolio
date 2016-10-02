@@ -264,20 +264,21 @@ header{
   a{
      text-decoration:none;
                     i{
-                    transition: 1s ease all;
+transition: 1s ease all;
     margin: 10px 0px;
     margin-right: 15px;
     border-radius: 50%;
     padding: 10px;
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     font-size: 20px;
-    color: white;
+    color: black;
     background: -webkit-linear-gradient(#f5deb3, #ca8300);
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 
     &:hover{
+        //background: gray;
         color: gray;
     }
 

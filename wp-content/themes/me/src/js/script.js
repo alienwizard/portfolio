@@ -251,6 +251,11 @@ switch(dir){
 
 	var scrollLimitTop = 0;
 
+	console.log(window.location.pathname);
+
+
+	if (window.location.pathname == /johanwendin/) {
+
 
 	if (window.innerWidth < 800) {
 
@@ -261,12 +266,14 @@ switch(dir){
 
 	}
 
+	}
+
 		var scrollimg = $('#me');
 
 
 		
-	
-
+	//IF FP
+if (window.location.pathname == /johanwendin/) {
 
 	//Check if user is within the zone for animated text
 	if(window.scrollY < scrollimg.offset().top + scrollimg.height()  && scrollLimitTop < window.scrollY){
@@ -295,6 +302,7 @@ switch(dir){
 			})
 
 	}
+}
 
 
 	//check if scrolled to section 2 adn animate it in
