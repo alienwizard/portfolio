@@ -32,7 +32,6 @@
 <div class="overlay"></div>
 <div class="text animated">
 	<h2 class="">Traktor och Maskin i Sörmland AB</h2>
-	<h3>Hemsideutveckling och projektledning</h3>
 	<p>Projekt om jag drev från början till slut. Jag skötte all kundkontatk samt all utveckling</p>
 	<a href="http://tmsab.se/">Gå till Hemsida</a>
 	</div>
@@ -41,7 +40,7 @@
 <div class="overlay"></div>
 <div class="text animated">
 	<h2>UFS i Uppsala</h2>
-	<p>Jag drev hela projektet från start till mål, kundkontakt och utveckling. samt även uppföljande analys med Google analytics och Tag manager</p>
+	<p>Hemsideprojekt åt en byggentreprenör i Uppsla, kundkontakt och utveckling. Jag utförde även uppföljande analys med Google analytics och Tag manager</p>
 	<a href="http://ufs.nu/">Gå till Hemsida</a>
 	</div>
 </div>
