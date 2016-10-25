@@ -14,6 +14,8 @@ get_header();
 			<li id="spel" ><i class="fa fa-smile-o" aria-hidden="true"></i><span>Spel</span></li>
 			<li id="all" ><i class="fa fa-globe" aria-hidden="true"></i><span>Alla Projekt</span></li>
 		</ul>
+
+		<h1 style="text-align:center">Hemsideprojekt från min tid hos mediahelp utlämnas vid förfrågan</h1>
 	
 <?php if(have_posts()){ ?>
 

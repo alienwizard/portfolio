@@ -24,7 +24,7 @@
 </div>
 
 </section>
-
+<!--
 <section  class="fullH" id="two">
 <h1 class="animated">Utvalda projekt</h1>
 <div class="project-scroll animated">
@@ -61,6 +61,7 @@
 	</div>
 </div>
 </section>
+-->
 </div>
 </article>
 
