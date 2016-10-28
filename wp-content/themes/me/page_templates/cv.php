@@ -62,15 +62,15 @@
 				<h3>Good understanding of Google Analytics. link to certificate below</h3>
 				<a href="https://www.google.com/partners/#p_certification_html;cert=3">Google Analytics certified</a>
 		</li>
-		<li><h3>Photoshop: </h3></li>
-		<li><h3>Basic Knowledge of ADobe Premier. Used in project with friends and in some courses at upper secondary school</h3></li>
+		<li><h3>Working knowledge of Adobe Photoshop. Currently working with Creative Cloud and using it for everything from simple image editing to Webdesign mockups.</h3></li>
+		<li><h3>Basic Knowledge of Adobe Premier. Used in project with friends and in some courses at upper secondary school</h3></li>
 		<li>
 				<h3>Web Development</h3>
 				<p>PHP mostly in a Wordpress environment</p>
 				<p>Very experienced with Javascript, mostly with the Jquery library and React</p>
-        <p>The HMTL markup language is like the second alphabet of my life. Experience of using a variety of HTML 5 tags and attributes. I have experience building my HTML with Jade.</p>
+        <p>Very experienced with the HMTL markup language. working experience of using a variety of HTML 5 tags and attributes. I have also been building my HTML with Jade.</p>
         <p>CSS and CCS3 usually compiled from a SASS. I have worked with a variety of psuedo elements and other CSS3 features. I always write sites with responsive designs using the CSS3 Media querys</p>
-        <p>Currently building all my projects with SASS. Webpack compiles all my SASS into minified css for the browser.</p>
+        <p>Currently building all my projects with SASS. Webpack compiles all my SASS into minified CSS for the browser.</p>
         <p>Very experienced with JQuery. All my projects have Jquery in the front-end</p>
         <p>MySQL with Wordpress and also with </p>
         <p>Experienced with Node.js</p>
@@ -79,13 +79,13 @@
         <p>
         <a href="https://github.com/alienwizard">Git</a>
         <p></p>
-        <p>Grunt is something that i used alot before as my task runner, but i've recently started using Webpack more and more</p>
+        <p>Grunt is something that i used a lot before as my task runner, but i have been recently started using Webpack more and more</p>
         <p>Webpack</p>
 		</li>
 		<li>
 				<h3>Other</h3>
         <p>basic knowledge of Java from a few courses at school and some small projects at home</p>
-        <p>Knowlege of the C++ programming language</p>
+        <p>Knowledge of the C++ programming language</p>
 		</li>
 
 	</ul>
