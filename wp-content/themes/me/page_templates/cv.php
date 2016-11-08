@@ -67,7 +67,7 @@
 		<li>
 				<h3>Web Development</h3>
 				<p>PHP mostly in a Wordpress environment</p>
-				<p>Very experienced with Javascript, mostly with the Jquery library and React</p>
+				<p>Very experienced with Javascript, mostly with the Jquery library and React. Using the es6 standard with babel on most of my projects now</p>
         <p>Very experienced with the HMTL markup language. working experience of using a variety of HTML 5 tags and attributes. I have also been building my HTML with Jade.</p>
         <p>CSS and CCS3 usually compiled from a SASS. I have worked with a variety of psuedo elements and other CSS3 features. I always write sites with responsive designs using the CSS3 Media querys</p>
         <p>Currently building all my projects with SASS. Webpack compiles all my SASS into minified CSS for the browser.</p>
@@ -75,7 +75,7 @@
         <p>MySQL with Wordpress and also with </p>
         <p>Experienced with Node.js</p>
         <p>Working knowledge of React. This is currently my favorite technology to work with on my spare time</p>
-        <p>Angular.js is nothing i have been using at work, but i think its a exciting technology and i have been doing a few projects at home and getting to know the technology a bit more</p>
+        <p>Experience with AngularJs from private projects, but i would like to get to know it a bit more because of its modular nature.</p>
         <p>
         <a href="https://github.com/alienwizard">Git</a>
         <p></p>
